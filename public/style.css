@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(4, 0, 46);
-    color: white;
+    background-color: rgb(50, 1, 47);
+    color: rgb(226, 223, 208);
    
 }
 nav{
@@ -19,7 +19,7 @@ nav{
     max-height: 500px;
     /* height: 800px;  */
     background-color: rgb(4, 0, 46);
-    border: 2px solid rgb(42, 61, 67);
+    border: 2px solid rgb(226, 223, 208);
     border-radius: 19px;
     display: flex;
     justify-content: center;
@@ -49,8 +49,8 @@ padding: 10px;
     outline: none;
     resize: none;
     border-radius: 15px;
-    background-color: rgb(4, 0, 46);
-    color: white;
+    background-color:rgb(82, 76, 66);
+    color: rgb(226, 223, 208);
     padding: 10px;
     border: none;
     font-size: x-large;
@@ -62,9 +62,9 @@ padding: 10px;
    
 }
 .send-btn svg{
-    background: lightgreen;
+    background:rgb(249, 115, 0);
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid rgb(226, 223, 208);
     /* box-shadow: 5px 5px; */
     
 }

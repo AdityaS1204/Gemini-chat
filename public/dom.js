@@ -1,4 +1,6 @@
-
+document.querySelector("#theme").addEventListener('click',()=>{
+    let bgChange = document.querySelector('body').style.backgroundColor = ""
+})
 document.getElementById('sendButton').addEventListener('click', async () => {
     const prompt = document.getElementById('P-bar').value;
 
