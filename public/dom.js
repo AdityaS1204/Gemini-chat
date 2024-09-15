@@ -1,9 +1,34 @@
-document.querySelector("#theme").addEventListener('click',()=>{
-    let bgChange = document.querySelector('body').style.backgroundColor = ""
+//theme
+document.querySelectorAll(".theme-btn")[0].addEventListener('click',()=>{
+    let bodyT =  document.querySelector('body');
+    bodyT.style.color = "black";
+    bodyT.style.backgroundColor = "#D1E9F6";
+    
 })
-document.getElementById('sendButton').addEventListener('click', async () => {
-    const prompt = document.getElementById('P-bar').value;
+document.querySelectorAll(".theme-btn")[1].addEventListener('click',()=>{
+    let bodyT =  document.querySelector('body');
+    bodyT.style.color = "white";
+    bodyT.style.backgroundColor = "#03002e";
+    
+})
 
+//textarea
+document.addEventListener("input",()=>{
+    const textarea = document.getElementById('P-bar');
+    function resizeTextArea(){
+        textarea.style.height = "auto";
+        textarea.style.height = `${textarea.scrollHeight}px`;
+    }
+    textarea.addEventListener('input',resizeTextArea);
+    resizeTextArea();
+})
+                    
+
+//sending prompt
+document.getElementById('sendButton').addEventListener('click', async () => {
+    
+    const prompt = document.getElementById('P-bar').value;
+    
     try {
         const response = await fetch('/get-response', {
             method: 'POST',
@@ -25,3 +50,16 @@ document.getElementById('sendButton').addEventListener('click', async () => {
         document.querySelector('.output').innerHTML = '<p>Error fetching response.</p>';
     }
 });
+
+
+
+
+
+
+
+
+
+
+//1. display the response in proper format
+//2. change font style
+// 3. 
